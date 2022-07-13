@@ -10,6 +10,7 @@ public class Key : Collectable
     
     public Text keyCounter;
     public GameObject exitPortal;
+    public GameObject torches;
     protected override void OnCollect()
     {
 
@@ -28,6 +29,7 @@ public class Key : Collectable
             Debug.Log("All keys are collected");
             GameManager.instance.ShowText("A new portal has opened!", 25, Color.green, transform.position + Vector3.down, Vector3.zero, 1.5f);
             exitPortal.SetActive(true);
+            torches.SetActive(true);
         }   
 
 
