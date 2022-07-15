@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
         {
             currentCharacterSelection++;
 
-            //when weget to the end of the list of characters to select
+            //when we get to the end of the list of characters to select
             if (currentCharacterSelection == GameManager.instance.playerSprites.Count)
                 currentCharacterSelection = 0; //go back to the beginning
 
@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
         {
             currentCharacterSelection--;
 
-            //when weget to the end of the list of characters to select
+            //when we get to the end of the list of characters to select
             if (currentCharacterSelection < 0)
                 currentCharacterSelection = GameManager.instance.playerSprites.Count - 1; //go back to the beginning
 
@@ -70,7 +70,7 @@ public class MainMenu : MonoBehaviour
         coinsText.text = GameManager.instance.coins.ToString();
 
         //xp bar
-        ///There are two states: max level, and not max level.  we will first check if the player is at the max level. 
+        ///There are two states: max level, and not max level. first check if the player is at the max level. 
         ///
         int currentLevel = GameManager.instance.GetCurrentLevel();
         if (currentLevel == GameManager.instance.xpTable.Count) //if current level is equal to the max level

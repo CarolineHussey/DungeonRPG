@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour
     public void WipeGameData()
     {
         KOAnimator.SetTrigger("Hide");
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Start");
         player.Respawn();
         coins = 0;
         experience = 0; 
