@@ -142,7 +142,7 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         KOAnimator.SetTrigger("Hide");
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Start");
         player.Respawn();
     }
     public void SaveState() 
@@ -174,16 +174,15 @@ public class GameManager : MonoBehaviour
     {
         KOAnimator.SetTrigger("Hide");
         SceneManager.LoadScene("Start");
-        player.Respawn();
+        player.ResetPlayer();
         coins = 0;
         experience = 0; 
-        player.hitPoint = 10;
-        player.maxHitPoint = 10;
-        player.SetLevel(1);
-        weapon.SetWeaponLevel(0);
+        weapon.ResetWeapon();
+        
     }
     public void QuitGame()
     {
+        SaveState();
         Application.Quit();
     }
 

@@ -22,7 +22,7 @@ public class NPC : Collidable
         if (Time.time - lastText > cooldown)
         {
             lastText = Time.time;
-            GameManager.instance.ShowText(message, 20, Color.yellow, transform.position + Vector3.down, Vector3.zero, cooldown);
+            GameManager.instance.ShowText(message, 30, Color.yellow, transform.position + Vector3.down, Vector3.zero, cooldown);
         }
     }
 }

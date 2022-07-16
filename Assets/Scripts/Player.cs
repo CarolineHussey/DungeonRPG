@@ -81,4 +81,17 @@ public class Player : Mover
         pushDirection = Vector3.zero;
 
     }
+
+    public void ResetPlayer()
+    {
+        isKO = false;
+        lastImmune = Time.time;
+        pushDirection = Vector3.zero;
+        hitPoint = 10;
+        maxHitPoint = 10;
+        SetLevel(1);
+
+    }
+
+
 }

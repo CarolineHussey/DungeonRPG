@@ -78,4 +78,12 @@ public class Weapon : Collidable
         weaponLevel = level;
         spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
     }
+
+    public void ResetWeapon()
+    {
+        weaponLevel = 0;
+        spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
+
+    }
+
 }
