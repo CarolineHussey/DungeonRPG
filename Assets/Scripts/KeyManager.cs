@@ -14,6 +14,8 @@ public class KeyManager : MonoBehaviour
     public Text keyCounter;
     public GameObject exitPortal;
     public GameObject torches;
+    public bool goldKey = false;
+    public GameObject npc;
 
     //public GameObject KeyCounter;
     public List<GameObject> keys = new List<GameObject>();

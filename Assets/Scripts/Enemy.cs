@@ -52,7 +52,7 @@ public class Enemy : Mover
                 
         }
 
-        //when the player is not in ran=ge
+        //when the player is not in range
         else
         {
             UpdateMotor(startingPosition - transform.position); 

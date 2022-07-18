@@ -47,6 +47,7 @@ public class Player : Mover
     {
         maxHitPoint++;
         hitPoint = maxHitPoint;
+        GameManager.instance.ShowText("Level Up!", 30, Color.blue, transform.position, Vector3.up * 40, 1.0f);
     }
 
     public void SetLevel(int level)
