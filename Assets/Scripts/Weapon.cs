@@ -14,7 +14,7 @@ public class Weapon : Collidable
 
     //Swing logic
     private Animator anim;
-    private float cooldown = 0.25f;
+    private float cooldown = 0.2f;
     private float lastSwing;
     
     /*override the start function in Collidable (as we've inherited from collidable, we will need to use start for the weapon logic, 
