@@ -52,8 +52,9 @@ public class Player : Mover
 
     public void SetLevel(int level)
     {
-        for (int i = 0; i < level; i++) 
-            OnLevelUp();
+        for (int i = 0; i < level; i++)
+            maxHitPoint++;
+            hitPoint = maxHitPoint;
     }
 
     public void Heal(int healingAmount)
